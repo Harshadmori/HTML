@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    color: red;
+    text-decoration-line: underline;
+}
+.name{
+    height: 20px;
+    width: 600px;
+}
+#add{
+    height: 200px;
+}
+#register{
+    height: 40px;
+    width: 130px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+*{
+    font-size: x-large;
+    margin-left: 10px;
+}

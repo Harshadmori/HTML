@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+</head>
+
+<body>
+    <h1>Audio and Video with Muted, Loop, and Autoplay</h1>
+    <video width="320" height="240" autoplay muted loop controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio autoplay loop muted controls>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <h1>Shapes Using Canvas</h1>
+    <canvas id="canvasShapes" width="400" height="400" style="border:1px solid #000;"></canvas>
+    <script>
+        const canvas = document.getElementById('canvasShapes');
+        const ctx = canvas.getContext('2d');
+
+        
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(50, 50, 100, 50);
+
+        
+        ctx.beginPath();
+        ctx.arc(200, 100, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = 'red';
+        ctx.fill();
+        ctx.stroke();
+
+    
+        ctx.beginPath();
+        ctx.moveTo(300, 50);
+        ctx.lineTo(350, 150);
+        ctx.lineTo(250, 150);
+        ctx.closePath();
+        ctx.fillStyle = 'green';
+        ctx.fill();
+    </script>
+
+    <h1>Shapes Using SVG</h1>
+    <svg width="400" height="400" style="border:1px solid #000;">
+        
+        <rect x="50" y="50" width="100" height="50" fill="blue" />
+        
+        <circle cx="200" cy="100" r="40" fill="red" />
+        
+        <polygon points="300,50 350,150 250,150" fill="green" />
+    </svg>
+</body>
+
+</html>
